@@ -21,3 +21,11 @@ for d in data:
 print('總共有', len(new), '筆評論長度小於100')
 print(new[0])
 print(new[1])
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('總共有', len(good), '筆評論提到good')
+print(good[0])
+print(good[1])
