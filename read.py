@@ -12,3 +12,12 @@ sum_len = 0
 for d in data:
 	sum_len += len(d)
 print('評論的平均長度為:', sum_len/len(data), '個字')
+
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('總共有', len(new), '筆評論長度小於100')
+print(new[0])
+print(new[1])
